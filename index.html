@@ -1,0 +1,161 @@
+<!-- 
+* Assignment 6: My Personal Blog – CSS Styling Practice
+* Programmer : Evan Coulstring
+Requirements
+1. Apply Inline Styles
+2. Apply Internal Styles
+3. Apply External Styles (See CSS)
+4. Organize Your CSS (See CSS)
+5. Use Various CSS Selectors  (See CSS)
+
+Sources were used to learn how to code specific elements, no code was taken direcly from any source and applied,
+anything from any source was first learned, then written. 
+
+W3 schools - https://www.w3schools.com/ -
+Microsoft co-pilot - https://copilot.microsoft.com/
+Cisco Networking Academy - https://www.netacad.com/
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Photography Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- 2. Apply Internal Styles
+Inside the <head> of your HTML file, add internal CSS for <p> elements: -->
+    <style>
+        p {
+            color: #3a4051;
+            font-size: 16px;
+            font-weight: lighter;
+        }
+    </style>
+</head>
+
+<body>
+    <!--  1. Apply Inline Styles - Use inline CSS to style the page title:-->
+    <header id="header">
+        <h1 style="color: black; font-size: 42px; position: absolute; text-decoration-line: underline;         
+            top: 50%; left: 50%;transform: translate(-50%, -50%);margin: 0;">
+            <!--Brings text to center of content area-->
+            Welcome to My Photography Blog</h1>
+    </header>
+    <main>
+        
+        <section>
+            <h2>The Beginning</h2>
+            <p>
+                I ended up getting into photography on an impulse buy, see, I had been on small trip outside of my normal 
+                area and wanted to take pictures of the sights, however, for the life of me I couldn't get my little
+                phone camera to take the beautiful pictures I was hoping to capture. After that happening all day, I had
+                gotten frustrated by the end of the trip. Then while out picking up some basic items for home I ran across 
+                a camera, on sale, for 50% off After the experience earlier that day, I didn't even think, I just bought, 
+                and have never looked back since.
+                <br><br>
+                It didn't take very long for me to realize that I had no clue on how to REALLY use this new camera I
+                just spent a couple hundred dollars on, however that was simply the next challenge I thought I had to 
+                Conquer, was I ever wrong!!
+            </p>
+        </section>
+
+        <div class="photo-section">
+            <h2 class="grid-title">Toronto Zoo</h2>
+            <p class="grid-description">A small collection of pictures from my trip to the Toronto Zoo.</p>
+            <div class="grid-container">
+                <img src="images/zoo1.JPG" alt="Picture of Ostrich">
+                <img src="images/zoo7.JPG" alt="Picture of Zebra">
+                <img src="images/zoo3.JPG" alt="Picture of Giraffe">
+                <img src="images/zoo4.JPG" alt="Picture of Flamingo">
+                <img src="images/zoo5.JPG" alt="Picture of Eagle ">
+                <img src="images/zoo6.JPG" alt="Picture of Tiger">
+            </div>
+        </div>
+
+        <section>
+            <h2> <span style="color: red; font-weight: bold;">COVID</span> and Photography</h2>
+            <p>
+                It wasn't long after I bought the camera that the lockdowns started, I only had it for a few weeks
+                before the world came to a halt, any thoughts I had about getting someone to teach me how to use the 
+                camera, or any classes I considered taking for photography were suddenly gone, there would be no way 
+                with how severe the lockdowns were that I could have another person teach me, and with my career at 
+                the time being focused on Hospitality and events, I wasn't working, therefore couldn't consider
+                spending money on taking an official course. So, I decided to teach myself.
+                <br><br>
+                I would watch videos and read articles in the evenings, and everyday during the week, Monday to Friday,
+                I set my alarm for 8:30AM and went out for a minimum of 6 hours practicing Photography and the lessons 
+                I recently learned from online sources.
+                <br><br>
+                The lockdowns, as horrible as a situation as the big picture was, offered me the most amazing chance to
+                learn photography.Not only did it give me the time, it also gave me the freedom to take pictures without 
+                people getting in my shot or making me try to wait for the right moment when nobody was in frame, because 
+                nobody was out.
+            </p>
+        </section>
+
+        <div class="photo-section">
+            <h2 class="grid-title">Local Flora</h2>
+            <p class="grid-description">A Small collection of photos of flora found around Halifax, Nova Scotia</p>
+            <div class="grid-container">
+                <img src="images/Flower1.jpg" alt="Picture of flora 1">
+                <img src="images/flower2.jpg" alt="Picture of flora 2">
+                <img src="images/flower3.jpg" alt="Picture of flora 3">
+                <img src="images/flower4.jpg" alt="Picture of flora 4">
+                <img src="images/flower5.jpg" alt="Picture of flora 5">
+                <img src="images/flower6.jpg" alt="Picture of flora 6">
+            </div>
+        </div>
+
+        <section>
+            <h2> The Results</h2>
+            <p>
+                I continue to wake up in the morning and either go out taking pictures or sit on my computer and learn
+                about photography for the whole two years of the pandemic, due to the camera not being waterproof I 
+                stayed home on days of bad weather, however I didn't allow either winter cold or summer heat prevent me 
+                from going out, I maintained the routine.
+                <br><br>
+                The results are well worth the effort, I now never use one of the pre-set modes, my camera is only ever
+                on manual, and I choose each setting myself to tailor my shot to my situation to get the exact result I 
+                want. The experience I gathered during the pandemic has been so valuable that many time when I do a test 
+                shot to check my setting for the new setting I had picked the perfect setting the first time and don't 
+                even need to adjust the settings further, just take the photos. This is an experience that I wouldn't 
+                want to trade for anything. It has been tremendously valuable and showed me that I have a love for a new 
+                hobby, Photography, one that I never thought that I would get into.
+                <br><br>
+                I can't wait to have the opportunity to share more of the wonderful pictures I have taken over the
+                years.
+            </p>
+        </section>
+
+        <div class="photo-section">
+            <h2 class="grid-title">Local animals and scenery</h2>
+            <p class="grid-description">A collection of memorable moments from our recent trip to the city zoo.</p>
+            <div class="grid-container">
+                <img src="images/animal1.jpg" alt="Picture  of Chipmunk">
+                <img src="images/animal2.jpg" alt="Picture of Bee">
+                <img src="images/animal3.jpg" alt="Picture of White Goose">
+                <img src="images/Scenery1.JPG" alt="Picture of Niagra Falls">
+                <img src="images/Scenery2.jpg" alt="Picture of HFX Waterfront">
+                <img src="images/Scenery3.jpg" alt="Scenic Pic of Woods in Winter">
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer-inner">
+            <p> Contact: <a href="mailto:info@myblog.com">info@myblog.com</a>
+            </p>
+            <p>Phone: <a href="tel:+15551234567">+1 (555) 123-4567</a>
+            </p>
+            <p>Website:<a href="https://www.myblog.com" target="_blank" rel="noopener">www.myblog.com</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

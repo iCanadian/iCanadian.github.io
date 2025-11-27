@@ -1,0 +1,162 @@
+
+/*[][][][][][][][][][][][][][][][][][][][][][][]   Color Pallett  [][][][][][][][][][][][][][][][][][][][][][][] */
+/*
+Main Pallett:
+#bccad6 
+#8d9db6
+#667292
+#f1e3dd
+
+Other Colors:
+#333333
+#ffffff
+#333
+#666
+Red
+Orange
+
+.colorTest {color:   };
+*/
+
+
+/* [][][][][][][][][][][][][][][][][][][][][][][]  BASE STYLES [][][][][][][][][][][][][][][][][][][][][][][]  */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  background-color: #f1e3dd;
+}
+
+/* [][][][][][][][][][][][][][][][][][][][][][][]   HEADER   [][][][][][][][][][][][][][][][][][][][][][][]  */
+header {
+  background-image: url("images/IMG_0035.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 250px;
+  background-color: #333333;
+  padding: 20px;
+  text-align: center;
+  border: 5px solid #8d9db6;
+  box-shadow: 0px 15px 15px #333333;
+  position: relative;
+}
+
+/*  ID Selectors */
+#page-header {
+  border-bottom: 2px solid black;
+}
+
+/* ID Selectors */
+#page-header {
+  border-bottom: 2px solid black;
+}
+
+/* [][][][][][][][][][][][][][][][][][][][][][][]  BODY SECTION STYLES [][][][][][][][][][][][][][][][][][][][][][][]  */
+/*Element Selector*/
+section {
+  padding: 20px;
+  border: 2px solid #ccc;
+  background-color: #bccad6;
+  border-radius: 8px;
+  box-shadow: 0px 15px 15px #333333;
+  max-width: 1500px;
+  margin: 50px auto;
+}
+
+/*Class Selector */
+.photo-section {
+  max-width: 1500px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #ccc;
+  background-color: #bccad6;
+  border-radius: 8px;
+  box-shadow: 0px 15px 15px #333333;
+}
+
+/*[][][][][][][][][][][][][][][][][][][][][][][]  Other Element Selectors  [][][][][][][][][][][][][][][][][][][][][][][] */
+h2 {
+  color: black;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/*[][][][][][][][][][][][][][][][][][][][][][][]  Footer Selectors [][][][][][][][][][][][][][][][][][][][][][][] */
+footer {
+  background-color: #333333;
+  padding: 20px 10px;
+  text-align: center;
+  color: #ffffff;
+  border-top: 4px solid #8d9db6;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  align-items: center;
+}
+
+/* Combinator Selector */
+footer p {
+  margin: 0;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+footer a {
+  color: #ffffff;
+  margin-left: 6px;
+}
+
+/* Pseudo-Class */
+a:hover {
+  color: orange;
+}
+
+/*[][][][][][][][][][][][][][][][][][][][][][][]   Other Class Selectors  [][][][][][][][][][][][][][][][][][][][][][][]*/
+
+
+/*Creates Grid for photos*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Creates 3 columns */
+  gap: 15px;
+  /* spacing between images */
+  max-width: 1300px;
+  margin: auto;
+}
+
+/*Defines properties for images within grid*/
+.grid-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/*  Hover effect for picture grid*/
+.grid-container img:hover {
+  transform: scale(1.05);
+  /* Slight zoom */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  /* Soft shadow */
+}
+
+.grid-title {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.grid-description {
+  font-size: 1em;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+
